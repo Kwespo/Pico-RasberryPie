@@ -7,10 +7,10 @@ OnboardLED = Pin(25, Pin.OUT)
 OnboardLED.value(0) # the light starts as off.
 
 GreenLightLED = Pin(1, Pin.OUT)
-GreenLightLED.value(1) # the light starts as on
+GreenLightLED.value(0) # the light starts as on
 
 BlueLightLED = Pin(5, Pin.OUT)
-BlueLightLED.value(1) # the light is on
+BlueLightLED.value(0) # the light is on
 
 def OnBoardLEDFlash():
   for i in range(3): # 3 Dots for "S"
