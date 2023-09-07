@@ -8,7 +8,8 @@ Dash = Machine.Pin(5, Machine.Pin.OUT)#Dash it not its own LED.
                                       #Its working in conjunction with DOT to 
                                       #make a long dash in LED.
 Dash.value(0)
-
+Space = Machine.Pin(9, Machine.Pin.OUT)
+Space.value(0)
 
 MessageMorse = (input("Input your message in morse code to add spaces please add a forwards slash or space between the words: ")) #gets the message in morse code
 MessageList = list(MessageMorse)
@@ -29,7 +30,10 @@ for i in MessageList:
     Dash.value(0)
     utime.sleep(0.2)
   elif i == "/" or i == " ":#if its a space or '/' it makes a gap between the next message
-    utime.sleep(1)
+    Space.value(1)
+    utime.sleep(0.2)
+    Space.value(0)
+    utime.sleep(0.5)
   else: 
     print(f"Invalid Char '{i}' in message. Please re-enter message")
     #If the character isn't one of the 3 choosen it will say that the char (and shows the 
