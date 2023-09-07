@@ -10,7 +10,7 @@ Dash = Machine.Pin(5, Machine.Pin.OUT)#Dash it not its own LED.
 Dash.value(0)
 
 
-MessageMorse = (input("Input your message in morse code to add spaces please add a forwards slash or space between the words.")) #gets the message in morse code
+MessageMorse = (input("Input your message in morse code to add spaces please add a forwards slash or space between the words: ")) #gets the message in morse code
 MessageList = list(MessageMorse)
 
 for i in MessageList:
