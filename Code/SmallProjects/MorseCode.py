@@ -33,4 +33,4 @@ for i in MessageList:
   else: 
     print(f"Invalid Char '{i}' in message. Please re-enter message")
     #If the character isn't one of the 3 choosen it will say that the char (and shows the 
-    #incorrect char) isnt allowed and asks to re enter the message
+    #incorrect char) isnt allowed and asks to re enter the messages
