@@ -4,9 +4,10 @@ import utime
 
 Dot = Machine.Pin(1, Machine.Pin.OUT)
 Dot.value(0)
-Dash = Machine.Pin(5, Machine.Pin.OUT)#Dash it not its own LED. 
-                                      #Its working in conjunction with DOT to 
-                                      #make a long dash in LED.
+Dash = Machine.Pin(5, Machine.Pin.OUT)
+#Dash it not its own LED. 
+#Its working in conjunction with DOT to 
+#make a long dash in LED.
 Dash.value(0)
 Space = Machine.Pin(9, Machine.Pin.OUT)
 Space.value(0)
@@ -36,5 +37,5 @@ for i in MessageList:
     utime.sleep(0.5)
   else: 
     print(f"Invalid Char '{i}' in message. Please re-enter message")
-    #If the character isn't one of the 3 choosen it will say that the char (and shows the 
-    #incorrect char) isnt allowed and asks to re enter the messages
+    #If the character isn't one of the 3 chosen it will say that the char (and shows the 
+    #incorrect char) isn't allowed and asks to re enter the messages
